@@ -1,0 +1,21 @@
+<h1> This is from Home Page</h1>
+
+<p>{{names.firstname}} {{names.lastname}}</p>
+
+<p>My name is {{name}}</p>
+
+<ul>
+    {{#each hobbies}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+
+{{#if isNameExists}}
+    <p>My Surname is {{names.lastname}}</p>
+{{else}}
+    <p>My Surname is Batchu</p>
+{{/if}}
+
+{{#unless Enabled}}
+    <p>It's Enable</p>
+{{/unless}}
